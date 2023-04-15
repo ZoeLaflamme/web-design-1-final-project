@@ -1,0 +1,183 @@
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    line-height: 1,4;
+    font-size:100%;
+    background-color: white;    
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+}
+
+
+h1 {
+    font-size: 280%;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #0E1215;
+}
+
+header ul {
+display: flex;
+}
+
+nav li {
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+nav a:link {
+    padding-top: 0.5em;
+    padding-right: 0.75em;
+    padding-bottom: .5em;
+    padding-left: 0.75em;
+    border-radius: 8px;
+}
+
+nav ul {
+padding-left: 0;
+list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.white-bg {
+background-color: white;
+}
+
+.white-bg2 {
+    background-color: white;
+    }
+
+.grey{
+background-color: #fafafa;
+}
+.grey > article {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.black-bg {
+background-color:#0E1215;
+}
+
+.grid-container div {
+background-color: black;
+} 
+
+span {
+font-family: 'Mukta', sans-serif;
+font-weight: bold;
+ font-size: 1.5rem;
+ padding-top: 0.5em;
+ padding-right: 0.75em;
+ padding-bottom: 0.5em;
+ padding-left: 0.75em;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.bio {
+display: flex;
+padding-bottom: 0%;
+}
+
+body {
+    margin: 0;
+}
+
+a.one:link {color:white;}
+a.one:visited {color: white;}
+a.one:hover {color: #ffcc00;}
+
+a.two:link {color:white;}
+a.two:visited {color: white;}
+a.two:hover {color: #ffcc00;}
+
+a.three:link {color:white;}
+a.three:visited {color: white;}
+a.three:hover {color: #ffcc00;}
+
+a.four:link {color:white;}
+a.four:visited {color: white;}
+a.four:hover {color: #ffcc00;}
+
+
+footer {
+    justify-content: center;
+    color: white;
+    display: flex;
+    background-color: black;
+}
+
+/*fix here*/
+.grid > bloquequote {
+
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
+/*fix here*/
+.review > cite {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
+.review > h2 {
+    text-align: center;
+    color: white;
+}
+/*fix here*/
+
+.white-bg2 img {
+    width: 3%;
+    display: grid;
+    grid-template-columns: auto;
+/*fix here*/
+}
+/*fix here*/
+#services {
+font-family: 'Times New Roman', Times, serif;
+}
+
+/*fix here*/
+.white-bg img {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 10%;
+}
