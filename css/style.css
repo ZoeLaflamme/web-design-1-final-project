@@ -21,10 +21,9 @@ nav {
 }
 
 h1, h2, h3 {
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Lobster', cursive;
     font-weight: bold;
 }
-
 
 h1 {
     font-size: 280%;
@@ -74,13 +73,33 @@ background-color: white;
 
 .white-bg2 {
     background-color: white;
-    }
+}
 
 .grey{
 background-color: #fafafa;
 }
-.grey > article {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+#services h2{
+    text-align: center;
+}
+
+.a1 {
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+text-align: left;
+width: 1280px;
+}
+a.box {
+color: white;
+display: flex;
+justify-content: space-evenly;
+background-color: #000;
+text-decoration: none;
+}
+
+a.box:hover {
+    color: red;
 }
 
 .black-bg {
@@ -115,22 +134,53 @@ body {
     margin: 0;
 }
 
-a.one:link {color:white;}
-a.one:visited {color: white;}
-a.one:hover {color: #ffcc00;}
+a.one:link {
+    color:white;
+}
 
-a.two:link {color:white;}
-a.two:visited {color: white;}
-a.two:hover {color: #ffcc00;}
+a.one:visited {
+    color: white;
+}
 
-a.three:link {color:white;}
-a.three:visited {color: white;}
-a.three:hover {color: #ffcc00;}
+a.one:hover {
+    color: #ffcc00;
+}
 
-a.four:link {color:white;}
-a.four:visited {color: white;}
-a.four:hover {color: #ffcc00;}
+a.two:link {
+    color:white;
+}
 
+a.two:visited {
+    color: white;}
+
+a.two:hover {
+    color: #ffcc00;
+}
+
+a.three:link {
+    color:white;
+}
+
+a.three:visited {
+
+    color: white;
+}
+
+a.three:hover {
+    color: #ffcc00;
+}
+
+a.four:link {
+    color:white;
+}
+
+a.four:visited {
+    color: white;
+}
+
+a.four:hover {
+    color: #ffcc00;
+}
 
 footer {
     justify-content: center;
@@ -139,45 +189,73 @@ footer {
     background-color: black;
 }
 
-/*fix here*/
 .grid > bloquequote {
 
-    display: grid;
-    grid-template-columns: auto;
-    text-align: center;
+box-sizing: border-box;
+display: grid;
+grid-template-rows:min-content;
+gap: 1rem;
+grid-template-areas:
+    "banner banner"
+    "row1   row2";
     font-style: italic;
     color: white;
 }
 
-/*fix here*/
-.review > cite {
+.grid > cite {
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: auto;
-    text-align: center;
-    font-style: italic;
-    color: white;
+    grid-template-rows:min-content;
+    gap: 3rem;
+    grid-template-areas:
+        "banner banner"
+        "row1   row2";
+        color: white;
 }
 
 .review > h2 {
     text-align: center;
     color: white;
 }
-/*fix here*/
 
-.white-bg2 img {
-    width: 3%;
-    display: grid;
-    grid-template-columns: auto;
-/*fix here*/
-}
-/*fix here*/
-#services {
-font-family: 'Times New Roman', Times, serif;
+#my-work h2, p {
+    display: flex;
+    justify-content: center;
 }
 
-/*fix here*/
-.white-bg img {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 10%;
+.white-bg {
+
+    box-sizing: border-box;
+    flex-direction: row;
 }
+
+.collage {
+
+box-sizing: border-box;
+display: grid;
+grid-template-columns: 1fr 1fr;
+width: 50%;
+}
+
+.white-bg2 > h2 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    width: 25%;
+    padding-left: 10rem;
+}
+
+.column {
+    flex:auto;
+    padding: 5px;
+}
+
+#contact-me {
+width: 500px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
