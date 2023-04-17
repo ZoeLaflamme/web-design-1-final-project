@@ -84,18 +84,26 @@ background-color: #fafafa;
 }
 
 .a1 {
-display: flex;
-justify-content: space-between;
-flex-direction: column;
-text-align: left;
-width: 1280px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.container {
+    padding: 20px;
+    text-align: left;
+}
+
 a.box {
 color: white;
-display: flex;
-justify-content: space-evenly;
+text-align: center;
 background-color: #000;
 text-decoration: none;
+display: inline-block;
+padding: 1rem 0.5rem;
+border-radius: 1px;
 }
 
 a.box:hover {
@@ -191,26 +199,22 @@ footer {
 
 .grid > bloquequote {
 
-box-sizing: border-box;
 display: grid;
-grid-template-rows:min-content;
-gap: 1rem;
-grid-template-areas:
-    "banner banner"
-    "row1   row2";
-    font-style: italic;
-    color: white;
+grid-template-columns: 1fr 1fr;
+width: 80%;
+text-align: center;
+font-style: italic;
+color: white;
+padding: 10px;
 }
 
 .grid > cite {
-    box-sizing: border-box;
     display: grid;
-    grid-template-rows:min-content;
-    gap: 3rem;
-    grid-template-areas:
-        "banner banner"
-        "row1   row2";
-        color: white;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    text-align: center;
+    color:#fafafa;
+    padding: 10px;
 }
 
 .review > h2 {
@@ -218,9 +222,16 @@ grid-template-areas:
     color: white;
 }
 
-#my-work h2, p {
+#my-work h2 {
     display: flex;
     justify-content: center;
+}
+
+#my-work p {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .white-bg {
@@ -231,14 +242,14 @@ grid-template-areas:
 
 .collage {
 
-box-sizing: border-box;
 display: grid;
-grid-template-columns: 1fr 1fr;
-width: 50%;
+grid-template-columns: 1fr 1fr .666fr;
+width: fit-content;
 }
 
 .white-bg2 > h2 {
     text-align: center;
+    width: 50%;
 }
 
 .row {
